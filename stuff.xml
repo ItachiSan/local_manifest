@@ -2,8 +2,6 @@
 <manifest>
     <!-- Repos for Jena (GT-S6500) builds -->
     <project path="device/samsung/jena" name="ItachiSan/android_device_samsung_s6500" revision="cm-10.1" />
-    <!-- project path="device/samsung/msm7x27a-common" name="TheWhisp/android_device_samsung_msm7x27a-common" revision="cm-10.1" />
-    <project path="kernel/samsung/msm7x27a" name="TheWhisp/android_kernel_samsung_msm7x27a" revision="cm-10.1-new" /-->
     <project path="device/samsung/msm7x27a-common" name="ItachiSan/android_device_samsung_msm7x27a-common" revision="cm-10.1" />
     <project path="kernel/samsung/msm7x27a" name="ItachiSan/android_kernel_samsung_msm7x27a" revision="cm-10.1-new" />
     <project path="vendor/samsung" name="TheWhisp/proprietary_vendor_samsung_msm7x27a" revision="cm-10.2" />
