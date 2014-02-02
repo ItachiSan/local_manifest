@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <!-- CM replacements -->
-    <remove-project name="CyanogenMod/android_frameworks_av" />
-    <remove-project name="CyanogenMod/android_frameworks_native" />
-    <remove-project name="CyanogenMod/android_hardware_libhardware_legacy" />
-    <project path="frameworks/av" name="androidarmv6/android_frameworks_av" revision="jellybean" />
-    <project path="frameworks/native" name="legaCyMod/android_frameworks_native" revision="jellybean" />
-    <project path="hardware/libhardware_legacy" name="legaCyMod/android_hardware_libhardware_legacy" revision="jellybean" />
-
     <!-- Local projects -->
-    <project path="hardware/atheros/ath6kl-compat" name="TheWhisp/android_hardware_atheros_ath6kl-compat" revision="cm-10.1" />
+    <project path="hardware/atheros/ath6kl-compat" name="ItachiSan/android_hardware_atheros_ath6kl-compat" revision="jellybean" />
     <project path="hardware/atheros/wlan" name="TheWhisp/android_hardware_atheros_wlan" revision="cm-10.1" />
     <project path="hardware/qcom/display-legacy" name="TheWhisp/android_hardware_qcom_display-legacy" revision="jellybean-mr2" />
     <project path="hardware/qcom/media-legacy" name="TheWhisp/android_hardware_qcom_media-legacy" revision="kitkat" />
