@@ -6,6 +6,10 @@
            review="review.android-legacy.com" />
     <remote name="cas"
            fetch="http://git.cas-online.nl" />
+    <remote name="erikcas"
+           fetch="https://github.com/erikcas" />
+    <remote name="mine"
+           fetch="https://github.com/ItachiSan" />
 
     <remove-project name="android_bionic" />
     <remove-project name="android_bootable_recovery" />
@@ -14,29 +18,30 @@
     <remove-project name="android_frameworks_base" />
     <remove-project name="android_frameworks_av" />
     <remove-project name="android_frameworks_native" />
-    <remove-project name="platform/frameworks/webview" />
     <remove-project name="android_external_wpa_supplicant_8" />
+    <remove-project name="android_vendor_omni" />
+    <remove-project name="android_hardware_qcom_display-caf" />
     <!-- Local projects -->
-    <project path="external/webkit" name="android_external_webkit" remote="al" revision="cm-11.0" />
     <project path="hardware/atheros/wlan" name="android_hardware_atheros_wlan" remote="al" revision="cm-11.0" />
     <project path="hardware/qcom/media-legacy" name="Evervolv/android_hardware_qcom_media-legacy" remote="github" revision="kitkat" />
     <project path="hardware/qcom/display-legacy" name="erikcas/android_hardware_qcom_display-legacy" remote="github" revision="android-4.4.2" />
+    <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" remote="erikcas" revision="cm-11.0" />
     <!-- Replacements-->
     <project path="hardware/msm7k" name="CyanogenMod/android_hardware_msm7k" remote="github" revision="cm-10.2" />
     <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="al" revision="android-4.4" />
     <project path="hardware/libhardware" name="android_hardware_libhardware" remote="al" revision="android-4.4" />
-    <project path="frameworks/base" name="android_frameworks_base" remote="al" revision="android-4.4" />
+    <project path="frameworks/base" name="android_frameworks_base" remote="al" revision="android-4.4.2" />
     <project path="bionic" name="android_bionic" remote="al" revision="android-4.4" />
     <project path="bootable/recovery" name="android_bootable_recovery" remote="al" revision="android-4.4" />
     <project path="hardware/samsung" name="android_hardware_samsung" remote="omnirom" revision="android-4.4" />
-    <project path="frameworks/av" name="android_frameworks_av" remote="al" revision="android-4.4" />
-    <project path="frameworks/native" name="android_frameworks_native" remote="al" revision="android-4.4" />
-    <project path="frameworks/webview" name="android_frameworks_webview" remote="al" revision="android-4.4" />
+    <project path="frameworks/av" name="android_frameworks_av" remote="al" revision="cm-11.0" />
+    <project path="frameworks/native" name="android_frameworks_native" remote="al" revision="cm-11.0" />
+    <project path="vendor/omni" name="android_vendor_omni" remote="al" revision="android-4.4" />
     <project path="external/wpa_supplicant_8" name="CyanogenMod/android_external_wpa_supplicant_8" remote="github" revision="cm-11.0" />
     <!-- Devices -->
-    <project path="device/samsung/jena" name="ItachiSan/android_device_samsung_s6500" remote="github" revision="omni-4.4" />
+    <project path="device/samsung/jena" name="android_device_samsung_s6500" remote="mine" revision="omni-4.4" />
     <project path="device/samsung/jenad" name="android_device_samsung_s6500d" remote="al" revision="android-4.4" />
-    <project path="device/samsung/msm7x27a-common" name="erikcas/android_device_samsung_msm7x27a-common" remote="github" revision="android-4.4.2" />
+    <project path="device/samsung/msm7x27a-common" name="android_device_samsung_msm7x27a-common" remote="mine" revision="omni-4.4" />
 
     <!-- FM Radio -->
     <!--
@@ -45,10 +50,10 @@
     -->
 
     <!-- Vendor files -->
-    <project path="vendor/samsung" name="erikcas/proprietary_vendor_samsung_msm7x27a" remote="github" revision="android-4.4.2" />
+    <project path="vendor/samsung" name="proprietary_vendor_samsung_msm7x27a" remote="erikcas" revision="android-4.4.2" />
 
     <!-- Kernel -->
     <!-- <project path="kernel/samsung/msm7x27a" name="android_kernel_samsung_msm" remote="al" revision="cm-10.2" /> -->
-    <project path="kernel/samsung/msm7x27a" name="erikcas/android_kernel_msm_caf" remote="github" revision="jb_2.5.5-dev" />
+    <project path="kernel/samsung/msm7x27a" name="android_kernel_msm_caf" remote="mine" revision="jb_2.5.5" />
 
 </manifest>
